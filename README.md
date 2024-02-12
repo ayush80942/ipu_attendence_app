@@ -1,3 +1,3 @@
 # ipu_attendance_app
 
-GGSIPU Attendence app version 2.
+GGSIPU Attendence App Version 2.
