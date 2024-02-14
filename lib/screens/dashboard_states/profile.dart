@@ -80,7 +80,7 @@ class Profile extends StatelessWidget {
         ),
         Container(
           width: 280,
-          margin: const EdgeInsets.fromLTRB(0, 32, 0, 0),
+          margin: const EdgeInsets.fromLTRB(0, 32, 0, 80),
           padding: const EdgeInsets.symmetric(
             horizontal: 24,
             vertical: 24,
