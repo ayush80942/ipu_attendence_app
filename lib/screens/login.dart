@@ -43,16 +43,16 @@ class _LogInPageState extends State<LogInPage> {
                 const SizedBox(
                   height: 8,
                 ),
-                TextField(
-                  decoration: InputDecoration(labelText: 'Enter your ID'),
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 0, 4),
+                  child: TextField(
+                    decoration: InputDecoration(labelText: 'Enter your ID'),
+                  ),
                 ),
                 if (state == 0)
-                  const SizedBox(
-                    height: 4,
-                  ),
-                TextField(
+                  TextField(
                   decoration: InputDecoration(labelText: 'Password'),
-                ),
+                  ),
                 const SizedBox(
                   height: 12,
                 ),

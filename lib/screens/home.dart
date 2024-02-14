@@ -162,6 +162,39 @@ class _HomeState extends State<Home> {
                         : const Color.fromARGB(255, 8, 20, 125),
                   ),
                 ),
+                const SizedBox(
+                  height: 12,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    width: 250,
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4,),
+                    decoration: BoxDecoration(
+                      border: Border.all(color: Colors.white, width: 1.5),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Row(
+                      children: [
+                        const Icon(Icons.logout_outlined, color: Colors.white,),
+                        const SizedBox(
+                          width: 12,
+                        ),
+                        Text(
+                          "Log out",
+                          style: GoogleFonts.roboto(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ),
@@ -178,7 +211,7 @@ class _HomeState extends State<Home> {
                 child: Row(
                   children: [
                     Expanded(
-                      flex: 2,
+                      flex: 6,
                       child: Padding(
                         padding: const EdgeInsets.only(left: 24),
                         child: Center(
@@ -190,7 +223,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     Expanded(
-                      flex: 6,
+                      flex: 15,
                       child: Column(
                         children: [
                           const SizedBox(
